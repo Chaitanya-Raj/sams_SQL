@@ -1,0 +1,3 @@
+SELECT DISINCT order_num 
+FROM OrderItems 
+WHERE quantity >= 100;

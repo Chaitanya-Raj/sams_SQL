@@ -1,1 +1,2 @@
-SELECT cust_id FROM Customers;
+SELECT cust_id 
+FROM Customers;
