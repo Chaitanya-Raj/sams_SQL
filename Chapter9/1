@@ -1,0 +1,2 @@
+SELECT SUM(quantity) AS item_ordered
+FROM OrderItems;
