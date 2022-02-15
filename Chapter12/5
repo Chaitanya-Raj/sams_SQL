@@ -1,0 +1,10 @@
+SELECT cust_name,
+    SUM(item_price * quantity) AS total_price
+FROM Customers,
+    Orders,
+    OrderItems
+WHERE Customers.cust_id = Orders.cust_id
+    AND Orders.order_num = OrderItems.order_num
+GROUP BY order_num
+HAVING SUM(item_price * quantity) >= 1000
+ORDER BY order_num;
