@@ -1,0 +1,6 @@
+SELECT prod_name,
+    COUNT(order_num) AS orders
+FROM Products AS p
+    LEFT OUTER JOIN OrderItems AS oi ON p.prod_id = oi.prod_id
+GROUP BY prod_name
+ORDER BY prod_name;

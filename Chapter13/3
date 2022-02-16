@@ -1,0 +1,5 @@
+SELECT prod_name,
+    order_num
+FROM Products AS p
+    LEFT OUTER JOIN OrderItems AS oi ON p.prod_id = oi.prod_id
+ORDER BY prod_name;

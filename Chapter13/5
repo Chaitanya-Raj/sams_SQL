@@ -1,0 +1,5 @@
+SELECT v.vend_id,
+    COUNT(prod_id)
+FROM Vendors AS v
+    LEFT OUTER JOIN Products AS p ON v.vend_id = p.vend_id
+GROUP BY v.vend_id;
