@@ -1,0 +1,19 @@
+INSERT INTO Customers(
+        cust_id,
+        cust_name,
+        cust_address,
+        cust_city,
+        cust_state,
+        cust_zip,
+        cust_country,
+        cust_email
+    ) VALUE(
+        21,
+        'Chaitanya Raj',
+        '221B Baker Street',
+        'London',
+        '',
+        '',
+        'England',
+        'chaitanyarajdixit@gmail.com'
+    );
