@@ -1,0 +1,2 @@
+UPDATE Vendors
+SET vend_web = 'abc@xyz.com';
